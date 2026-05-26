@@ -1,0 +1,79 @@
+"""World Cup 2026 match data with real teams and realistic matchups."""
+
+MATCHES_DATA = [
+    # === GROUP A ===
+    {"_id": "GS-01", "matchNumber": 1, "stage": "Group Stage", "group": "A", "homeTeam": "Mexico", "awayTeam": "Canada", "date": "2026-06-11T20:00:00Z", "venueId": "azteca", "city": "Mexico City", "country": "Mexico", "description": "Opening match of the 2026 World Cup. Co-hosts Mexico face fellow co-hosts Canada in a historic CONCACAF derby at the legendary Estadio Azteca.", "embedding": []},
+    {"_id": "GS-02", "matchNumber": 2, "stage": "Group Stage", "group": "A", "homeTeam": "Ecuador", "awayTeam": "Senegal", "date": "2026-06-12T17:00:00Z", "venueId": "bbva", "city": "Monterrey", "country": "Mexico", "description": "South American flair meets African passion as Ecuador takes on Senegal in the Monterrey heat.", "embedding": []},
+    {"_id": "GS-03", "matchNumber": 7, "stage": "Group Stage", "group": "A", "homeTeam": "Mexico", "awayTeam": "Ecuador", "date": "2026-06-16T20:00:00Z", "venueId": "akron", "city": "Guadalajara", "country": "Mexico", "description": "Mexico looks to secure qualification against a dangerous Ecuador side in Guadalajara.", "embedding": []},
+    {"_id": "GS-04", "matchNumber": 8, "stage": "Group Stage", "group": "A", "homeTeam": "Canada", "awayTeam": "Senegal", "date": "2026-06-16T17:00:00Z", "venueId": "bmo", "city": "Toronto", "country": "Canada", "description": "Canada plays its first home World Cup match in Toronto. A nation holds its breath.", "embedding": []},
+    {"_id": "GS-05", "matchNumber": 13, "stage": "Group Stage", "group": "A", "homeTeam": "Canada", "awayTeam": "Ecuador", "date": "2026-06-20T20:00:00Z", "venueId": "bcplace", "city": "Vancouver", "country": "Canada", "description": "Final group game for Canada in Vancouver. Win and they're through.", "embedding": []},
+    {"_id": "GS-06", "matchNumber": 14, "stage": "Group Stage", "group": "A", "homeTeam": "Senegal", "awayTeam": "Mexico", "date": "2026-06-20T20:00:00Z", "venueId": "azteca", "city": "Mexico City", "country": "Mexico", "description": "Mexico's final group game against Senegal at the Azteca. The hosts must deliver.", "embedding": []},
+
+    # === GROUP B ===
+    {"_id": "GS-07", "matchNumber": 3, "stage": "Group Stage", "group": "B", "homeTeam": "USA", "awayTeam": "Colombia", "date": "2026-06-12T20:00:00Z", "venueId": "sofi", "city": "Inglewood", "country": "USA", "description": "The United States opens their home World Cup against a dangerous Colombia. Los Angeles electrifies.", "embedding": []},
+    {"_id": "GS-08", "matchNumber": 4, "stage": "Group Stage", "group": "B", "homeTeam": "Morocco", "awayTeam": "Peru", "date": "2026-06-12T14:00:00Z", "venueId": "levis", "city": "Santa Clara", "country": "USA", "description": "2022 semifinalists Morocco face Peru in the Bay Area sunshine.", "embedding": []},
+    {"_id": "GS-09", "matchNumber": 9, "stage": "Group Stage", "group": "B", "homeTeam": "USA", "awayTeam": "Morocco", "date": "2026-06-17T20:00:00Z", "venueId": "metlife", "city": "East Rutherford", "country": "USA", "description": "The US faces Morocco at MetLife Stadium. 82,000 fans create a wall of sound in New Jersey.", "embedding": []},
+    {"_id": "GS-10", "matchNumber": 10, "stage": "Group Stage", "group": "B", "homeTeam": "Colombia", "awayTeam": "Peru", "date": "2026-06-17T17:00:00Z", "venueId": "hardrock", "city": "Miami Gardens", "country": "USA", "description": "South American showdown in Miami. Colombia's large diaspora turns Hard Rock into a yellow wall.", "embedding": []},
+    {"_id": "GS-11", "matchNumber": 15, "stage": "Group Stage", "group": "B", "homeTeam": "Peru", "awayTeam": "USA", "date": "2026-06-21T20:00:00Z", "venueId": "arrowhead", "city": "Kansas City", "country": "USA", "description": "The US closes group play in Kansas City. Arrowhead's legendary noise could be the 12th man.", "embedding": []},
+    {"_id": "GS-12", "matchNumber": 16, "stage": "Group Stage", "group": "B", "homeTeam": "Morocco", "awayTeam": "Colombia", "date": "2026-06-21T20:00:00Z", "venueId": "att", "city": "Arlington", "country": "USA", "description": "Morocco and Colombia battle for the top spot in Group B inside AT&T Stadium's air conditioning.", "embedding": []},
+
+    # === GROUP C ===
+    {"_id": "GS-13", "matchNumber": 5, "stage": "Group Stage", "group": "C", "homeTeam": "Argentina", "awayTeam": "Nigeria", "date": "2026-06-13T20:00:00Z", "venueId": "metlife", "city": "East Rutherford", "country": "USA", "description": "Defending champions Argentina take on Nigeria at MetLife. Will Messi's heir continue the dynasty?", "embedding": []},
+    {"_id": "GS-14", "matchNumber": 6, "stage": "Group Stage", "group": "C", "homeTeam": "Australia", "awayTeam": "Chile", "date": "2026-06-13T14:00:00Z", "venueId": "lincoln", "city": "Philadelphia", "country": "USA", "description": "Trans-Pacific matchup as Australia faces Chile in Philadelphia's summer heat.", "embedding": []},
+    {"_id": "GS-15", "matchNumber": 11, "stage": "Group Stage", "group": "C", "homeTeam": "Argentina", "awayTeam": "Chile", "date": "2026-06-18T20:00:00Z", "venueId": "hardrock", "city": "Miami Gardens", "country": "USA", "description": "South American rivalry in the Miami heat. Argentina vs Chile is always a battle.", "embedding": []},
+    {"_id": "GS-16", "matchNumber": 12, "stage": "Group Stage", "group": "C", "homeTeam": "Nigeria", "awayTeam": "Australia", "date": "2026-06-18T17:00:00Z", "venueId": "mercedes", "city": "Atlanta", "country": "USA", "description": "Nigeria's Super Eagles face Australia's Socceroos in Atlanta. Fast, physical football expected.", "embedding": []},
+
+    # === GROUP D ===
+    {"_id": "GS-17", "matchNumber": 17, "stage": "Group Stage", "group": "D", "homeTeam": "France", "awayTeam": "South Korea", "date": "2026-06-14T17:00:00Z", "venueId": "sofi", "city": "Inglewood", "country": "USA", "description": "World Cup royalty France opens against South Korea in Los Angeles. Mbappé dazzles under the SoFi lights.", "embedding": []},
+    {"_id": "GS-18", "matchNumber": 18, "stage": "Group Stage", "group": "D", "homeTeam": "Uruguay", "awayTeam": "Japan", "date": "2026-06-14T20:00:00Z", "venueId": "nrg", "city": "Houston", "country": "USA", "description": "Two-time champions Uruguay face a rising Japan in Houston. Grit meets precision.", "embedding": []},
+    {"_id": "GS-19", "matchNumber": 23, "stage": "Group Stage", "group": "D", "homeTeam": "France", "awayTeam": "Uruguay", "date": "2026-06-19T20:00:00Z", "venueId": "metlife", "city": "East Rutherford", "country": "USA", "description": "Heavyweight clash at MetLife. France vs Uruguay — a rematch of their 2018 quarterfinal.", "embedding": []},
+
+    # === GROUP E ===
+    {"_id": "GS-20", "matchNumber": 19, "stage": "Group Stage", "group": "E", "homeTeam": "Brazil", "awayTeam": "Serbia", "date": "2026-06-15T20:00:00Z", "venueId": "att", "city": "Arlington", "country": "USA", "description": "Five-time champions Brazil light up AT&T Stadium against a tough Serbia. Samba football in Texas.", "embedding": []},
+    {"_id": "GS-21", "matchNumber": 20, "stage": "Group Stage", "group": "E", "homeTeam": "Switzerland", "awayTeam": "Cameroon", "date": "2026-06-15T14:00:00Z", "venueId": "gillette", "city": "Foxborough", "country": "USA", "description": "Swiss precision meets Cameroon's Indomitable Lions in Boston.", "embedding": []},
+    {"_id": "GS-22", "matchNumber": 25, "stage": "Group Stage", "group": "E", "homeTeam": "Brazil", "awayTeam": "Switzerland", "date": "2026-06-20T17:00:00Z", "venueId": "sofi", "city": "Inglewood", "country": "USA", "description": "Brazil faces their 2022 group stage nemesis Switzerland. A must-win in Los Angeles.", "embedding": []},
+
+    # === GROUP F ===
+    {"_id": "GS-23", "matchNumber": 21, "stage": "Group Stage", "group": "F", "homeTeam": "England", "awayTeam": "Ghana", "date": "2026-06-14T14:00:00Z", "venueId": "lumen", "city": "Seattle", "country": "USA", "description": "England begins their World Cup campaign against Ghana in the Pacific Northwest. Three Lions roar in Seattle.", "embedding": []},
+    {"_id": "GS-24", "matchNumber": 22, "stage": "Group Stage", "group": "F", "homeTeam": "Denmark", "awayTeam": "Iran", "date": "2026-06-14T11:00:00Z", "venueId": "bcplace", "city": "Vancouver", "country": "Canada", "description": "European dark horses Denmark face Iran under BC Place's retractable roof.", "embedding": []},
+    {"_id": "GS-25", "matchNumber": 27, "stage": "Group Stage", "group": "F", "homeTeam": "England", "awayTeam": "Denmark", "date": "2026-06-19T17:00:00Z", "venueId": "mercedes", "city": "Atlanta", "country": "USA", "description": "A Euro 2020 semifinal rematch. England vs Denmark in Atlanta's cathedral of football.", "embedding": []},
+
+    # === GROUP G ===
+    {"_id": "GS-26", "matchNumber": 29, "stage": "Group Stage", "group": "G", "homeTeam": "Germany", "awayTeam": "Egypt", "date": "2026-06-15T17:00:00Z", "venueId": "lincoln", "city": "Philadelphia", "country": "USA", "description": "Germany opens against Egypt in Philadelphia. Die Mannschaft seeks redemption after 2022 group stage exit.", "embedding": []},
+    {"_id": "GS-27", "matchNumber": 30, "stage": "Group Stage", "group": "G", "homeTeam": "Costa Rica", "awayTeam": "Serbia", "date": "2026-06-15T11:00:00Z", "venueId": "bmo", "city": "Toronto", "country": "Canada", "description": "CONCACAF's Costa Rica takes on Serbia in Toronto. Small nation, big heart.", "embedding": []},
+
+    # === GROUP H ===
+    {"_id": "GS-28", "matchNumber": 31, "stage": "Group Stage", "group": "H", "homeTeam": "Spain", "awayTeam": "Tunisia", "date": "2026-06-16T14:00:00Z", "venueId": "nrg", "city": "Houston", "country": "USA", "description": "2010 champions Spain begin against Tunisia in Houston. Tiki-taka in Texas.", "embedding": []},
+    {"_id": "GS-29", "matchNumber": 32, "stage": "Group Stage", "group": "H", "homeTeam": "Netherlands", "awayTeam": "Paraguay", "date": "2026-06-16T11:00:00Z", "venueId": "arrowhead", "city": "Kansas City", "country": "USA", "description": "Dutch Total Football meets Paraguayan grit in Kansas City.", "embedding": []},
+    {"_id": "GS-30", "matchNumber": 37, "stage": "Group Stage", "group": "H", "homeTeam": "Spain", "awayTeam": "Netherlands", "date": "2026-06-21T17:00:00Z", "venueId": "sofi", "city": "Inglewood", "country": "USA", "description": "A 2010 World Cup Final rematch! Spain vs Netherlands in Los Angeles. The biggest group stage match of the tournament.", "embedding": []},
+
+    # === GROUP I ===
+    {"_id": "GS-31", "matchNumber": 33, "stage": "Group Stage", "group": "I", "homeTeam": "Portugal", "awayTeam": "Saudi Arabia", "date": "2026-06-17T14:00:00Z", "venueId": "gillette", "city": "Foxborough", "country": "USA", "description": "Portugal faces Saudi Arabia in Boston. Can the Saudis repeat their 2022 heroics?", "embedding": []},
+    {"_id": "GS-32", "matchNumber": 34, "stage": "Group Stage", "group": "I", "homeTeam": "Croatia", "awayTeam": "Wales", "date": "2026-06-17T11:00:00Z", "venueId": "lincoln", "city": "Philadelphia", "country": "USA", "description": "2022 semifinalists Croatia face Wales in Philadelphia. European class on display.", "embedding": []},
+
+    # === GROUP J ===
+    {"_id": "GS-33", "matchNumber": 35, "stage": "Group Stage", "group": "J", "homeTeam": "Belgium", "awayTeam": "Algeria", "date": "2026-06-18T14:00:00Z", "venueId": "lumen", "city": "Seattle", "country": "USA", "description": "Belgium's golden generation faces Algeria in Seattle.", "embedding": []},
+    {"_id": "GS-34", "matchNumber": 36, "stage": "Group Stage", "group": "J", "homeTeam": "Poland", "awayTeam": "Ivory Coast", "date": "2026-06-18T11:00:00Z", "venueId": "bcplace", "city": "Vancouver", "country": "Canada", "description": "Lewandowski's Poland takes on Ivory Coast's Elephants in Vancouver.", "embedding": []},
+
+    # === KNOCKOUT ROUNDS ===
+    {"_id": "R32-01", "matchNumber": 49, "stage": "Round of 32", "group": None, "homeTeam": "1A", "awayTeam": "3C/D", "date": "2026-06-28T17:00:00Z", "venueId": "metlife", "city": "East Rutherford", "country": "USA", "description": "Round of 32 at MetLife Stadium. The knockout stage intensity begins.", "embedding": []},
+    {"_id": "R32-02", "matchNumber": 50, "stage": "Round of 32", "group": None, "homeTeam": "1B", "awayTeam": "3E/F", "date": "2026-06-28T20:00:00Z", "venueId": "sofi", "city": "Inglewood", "country": "USA", "description": "Los Angeles hosts knockout football. Win or go home.", "embedding": []},
+    {"_id": "R32-03", "matchNumber": 51, "stage": "Round of 32", "group": None, "homeTeam": "1C", "awayTeam": "3A/B", "date": "2026-06-29T17:00:00Z", "venueId": "att", "city": "Arlington", "country": "USA", "description": "Knockout round in the heart of Texas.", "embedding": []},
+    {"_id": "R32-04", "matchNumber": 52, "stage": "Round of 32", "group": None, "homeTeam": "1D", "awayTeam": "3I/J", "date": "2026-06-29T20:00:00Z", "venueId": "nrg", "city": "Houston", "country": "USA", "description": "Houston hosts a Round of 32 thriller under the retractable roof.", "embedding": []},
+
+    # === QUARTERFINALS ===
+    {"_id": "QF-01", "matchNumber": 57, "stage": "Quarterfinal", "group": None, "homeTeam": "TBD", "awayTeam": "TBD", "date": "2026-07-04T17:00:00Z", "venueId": "sofi", "city": "Inglewood", "country": "USA", "description": "Quarterfinal on July 4th in Los Angeles. American independence meets World Cup drama.", "embedding": []},
+    {"_id": "QF-02", "matchNumber": 58, "stage": "Quarterfinal", "group": None, "homeTeam": "TBD", "awayTeam": "TBD", "date": "2026-07-04T20:00:00Z", "venueId": "metlife", "city": "East Rutherford", "country": "USA", "description": "Quarterfinal at MetLife. The biggest stadium in the tournament delivers the biggest games.", "embedding": []},
+    {"_id": "QF-03", "matchNumber": 59, "stage": "Quarterfinal", "group": None, "homeTeam": "TBD", "awayTeam": "TBD", "date": "2026-07-05T17:00:00Z", "venueId": "att", "city": "Arlington", "country": "USA", "description": "Quarterfinal in Dallas. Air-conditioned drama in the Texas heat.", "embedding": []},
+    {"_id": "QF-04", "matchNumber": 60, "stage": "Quarterfinal", "group": None, "homeTeam": "TBD", "awayTeam": "TBD", "date": "2026-07-05T20:00:00Z", "venueId": "arrowhead", "city": "Kansas City", "country": "USA", "description": "Quarterfinal at Arrowhead. The loudest stadium in America amplifies the stakes.", "embedding": []},
+
+    # === SEMIFINALS ===
+    {"_id": "SF-01", "matchNumber": 61, "stage": "Semifinal", "group": None, "homeTeam": "TBD", "awayTeam": "TBD", "date": "2026-07-08T20:00:00Z", "venueId": "metlife", "city": "East Rutherford", "country": "USA", "description": "Semifinal at MetLife Stadium. Two matches from glory.", "embedding": []},
+    {"_id": "SF-02", "matchNumber": 62, "stage": "Semifinal", "group": None, "homeTeam": "TBD", "awayTeam": "TBD", "date": "2026-07-09T20:00:00Z", "venueId": "att", "city": "Arlington", "country": "USA", "description": "Semifinal in Dallas. The road to the final narrows.", "embedding": []},
+
+    # === THIRD PLACE ===
+    {"_id": "TP-01", "matchNumber": 63, "stage": "Third Place", "group": None, "homeTeam": "TBD", "awayTeam": "TBD", "date": "2026-07-18T17:00:00Z", "venueId": "hardrock", "city": "Miami Gardens", "country": "USA", "description": "Third-place match in Miami. Consolation for some, celebration for fans.", "embedding": []},
+
+    # === FINAL ===
+    {"_id": "FINAL", "matchNumber": 64, "stage": "Final", "group": None, "homeTeam": "TBD", "awayTeam": "TBD", "date": "2026-07-19T16:00:00Z", "venueId": "metlife", "city": "East Rutherford", "country": "USA", "description": "The 2026 FIFA World Cup Final at MetLife Stadium. 82,500 fans witness history. The biggest sporting event on the planet.", "embedding": []},
+]

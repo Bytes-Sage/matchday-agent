@@ -1,0 +1,9 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "matchday-agent"
+version = "1.0.0"
+description = "A World Cup 2026 match-day planning AI agent."
+requires-python = ">=3.11"
