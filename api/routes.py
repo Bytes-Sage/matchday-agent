@@ -32,27 +32,35 @@ async def chat(request: ChatRequest):
         runner = get_runner()
         logger.info(f"Running agent for session: {session_id}")
         
+        from google.genai import types
+        
         # Run agent
-        result = await runner.run_async(request.message, session_id=session_id)
+        result_text = ""
+        extracted_tools = []
+        
+        async for event in runner.run_async(
+            user_id="default_user",
+            session_id=session_id,
+            new_message=types.Content(role="user", parts=[types.Part.from_text(text=request.message)])
+        ):
+            if hasattr(event, "content") and getattr(event, "content") is not None:
+                for part in getattr(event.content, "parts", []):
+                    if hasattr(part, "text") and getattr(part, "text"):
+                        result_text += part.text
+                    if hasattr(part, "function_call") and getattr(part, "function_call"):
+                        fc = part.function_call
+                        extracted_tools.append(ToolCall(
+                            tool_name=getattr(fc, "name", "unknown"),
+                            arguments=getattr(fc, "args", {}),
+                            result=None
+                        ))
         
         # Save message in our hacky dict just to return for GET /sessions/{session_id}
         sessions[session_id].append({"role": "user", "content": request.message})
-        sessions[session_id].append({"role": "agent", "content": result.text})
+        sessions[session_id].append({"role": "agent", "content": result_text})
         
-        extracted_tools = []
-        # Fallback to try mapping ADK trace to our ToolCall model if it exists
-        if hasattr(result, 'steps'):
-            for step in result.steps:
-                if hasattr(step, 'tool_calls'):
-                    for tc in step.tool_calls:
-                        extracted_tools.append(ToolCall(
-                            tool_name=getattr(tc, 'name', 'unknown'),
-                            arguments=getattr(tc, 'args', {}),
-                            result=str(getattr(tc, 'result', '')) if hasattr(tc, 'result') else None
-                        ))
-
         return ChatResponse(
-            response=result.text,
+            response=result_text,
             session_id=session_id,
             tool_calls=extracted_tools,
             timestamp=datetime.datetime.utcnow().isoformat()
